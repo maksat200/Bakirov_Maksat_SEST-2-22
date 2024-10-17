@@ -1,0 +1,259 @@
+* {
+    font-family: 'Montserrat' , sans-serif;
+   
+}
+header {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+    width: auto; 
+    margin-left: 120px;
+}
+
+
+main {
+    width: 100%;
+    max-width: 1040px;
+    height: auto;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: 60px;
+}
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: darkgray;
+}
+a:hover {
+    color : black;  
+}
+@keyframes shake {
+    0% { 
+       
+        transform: translateY(0);
+    }
+    25% {
+      
+         transform: translateY(-5px);
+     }
+    50% { 
+  
+        transform: translateY(5px);
+    }
+    75% {
+   
+         transform: translateY(-5px);
+    }
+    100% { 
+   
+        transform: translateY(0);
+
+    }
+}
+
+button {
+    width: 169px;
+    height: 56px;
+    background-color: #69B99D;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;    
+    justify-content: center;    
+    border-radius: 4%;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 50px ; 
+    transition: transform 0.3s;
+    
+}
+img {
+    margin: 0 7px 0 0; 
+}
+
+button:hover {
+    background-color: #0a2f22; 
+    transform: scale(1.05);
+    animation: shake 0.5s infinite; 
+}
+
+
+.fitness-jump {
+    display: flex;
+    width: 100%;
+    max-width: 550px;
+    height: auto; 
+    background-image: url("./img/fitness-jump.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-weight:300 ; 
+    text-transform:  uppercase; 
+    font-size: 40px; 
+}
+p { 
+    color:darkgray ; 
+    font-size: 16px; 
+
+}
+
+span {
+    color:rgb(159, 218, 218) ;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+}
+
+footer .last img {
+    position: fixed; 
+    right: 0;
+    bottom: 0;
+    width: 98.39px;
+    height: 100px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+
+    .logo {
+        height: 50px; 
+    }
+
+    button {
+        margin-top: 30px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .fitness-jump {
+        max-width: 430px  ; 
+        height: auto;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    button {
+        justify-content: center;
+        margin: 20px auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .info{
+       flex-direction: column;
+    }
+
+    .logo {
+        height: 40px; 
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 140px;
+        height: 45px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .fitness-jump {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    button {
+        margin: 20px auto; 
+    }
+}
+
+
+@media (max-width: 430px) {
+
+
+    .logo {
+        height: 30px;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 130px;
+        height: 40px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .fitness-jump {
+        display: none;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    button {
+        margin: 20px auto; 
+    }
+}
